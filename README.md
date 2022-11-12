@@ -7,7 +7,7 @@ This repository contains
 
 
     * [mira_dades.py](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis/inContext/mira_dades.py): **lorem ipsum sit amet**
-    * [a. fes_merge_en_tensor_3d (obte l'array 3d).py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obte%20l'array%203d).py)
+    * [a. fes_merge_en_tensor_3d (obte l'array 3d).py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obte%20l'array%203d).py): **lorem ipsum sit amet**
     * [b. analisisfinal.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py): **lorem ipsum**
 
     There are also other files which have relevance:
