@@ -12,7 +12,7 @@ This repository contains
 
     There are also other files which have relevance:
 
-    * [aux__ploteja_matrius_correlacions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__ploteja_matrius_correlacions.py): **lorem ipsum**
+    * [aux__ploteja_matrius_correlacions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__ploteja_matrius_correlacions.py): **lorem  asd asd asd asdasd**
     * [aux__reduccio_dimensions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__reduccio_dimensions.py): This file was done in order to implement a graphical interpretation for the explained variance of a principal components analysis (i.e it plots the eigenvalues of each component for the previously chosen number of components). The scree plot is a graphical way of seeing whether each component of a PCA adds value to what we are trying to model in terms of parsimony. Softwares such as SPSS or R have the possibility of getting a Scree plot easily, but python doesn't (at least, not while I was doing this thesis). So I coded this program to get the scree plot.
     
 [^1]: Lots of files are missing as github has limited space, so this is a simplification of the directories of my final thesis, not an exhaustive tour to it!
