@@ -1,7 +1,8 @@
 # REPOSITORY DESCRIPTION
 
-This repository contains 
-- [TFM_FINAL_santiagosanchez.pdf](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/TFM_FINAL_santiagosanchez.pdf): the final thesis as was handed in to the university. You can find its abstract down below
+This repository contains my MSc's final thesis and the the most important programs that I made, which were key to arrive to its end. These are the most important files and folders, explained:
+
+- [TFM_FINAL_santiagosanchez.pdf](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/TFM_FINAL_santiagosanchez.pdf): the final thesis as was handed in to the university.
 - [Writing](https://github.com/blackcub3s/MSc-FinalThesis/tree/main/Writing): Contains the LaTeX files and figures that were put together in order to compile /TFM_FINAL_santiagosanchez.pd.
 - [DataAnalysis](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis): this folder contains the most important programs I made in Python to do the analysis. Within the sub folder [inContext](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis/inContext) you'll find the same programs, but in contextx with some of the raw data behind (and other files that contributed to the development of the final thesis)[^1]. The most important files are:
 
@@ -10,7 +11,7 @@ This repository contains
     * [a. fes_merge_en_tensor_3d (obte l'array 3d).py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obte%20l'array%203d).py): **lorem ipsum sit amet**
     * [b. analisisfinal.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py): **lorem ipsum**
 
-    There are also other files which have relevance:
+    There are also other files, which have relevance:
 
     * [aux__ploteja_matrius_correlacions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__ploteja_matrius_correlacions.py): **lorem  asd asd asd asdasd**
     * [aux__reduccio_dimensions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__reduccio_dimensions.py): This file was done in order to implement a graphical interpretation for the explained variance of a principal components analysis (i.e it plots the eigenvalues of each component for the previously chosen number of components). The scree plot is a graphical way of seeing whether each component of a PCA adds value to what we are trying to model in terms of parsimony. Softwares such as SPSS or R have the possibility of getting a Scree plot easily, but python doesn't (at least, not while I was doing this thesis). So I coded this program to get the scree plot.
