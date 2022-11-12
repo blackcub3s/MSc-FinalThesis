@@ -1,0 +1,135 @@
+
+
+
+
+##################################################
+RESULTAT DESPRES DE SUMAR ELS FP,TN,TP,FN DELS 10 FOLDs
+               (Logistic Regression)
+####################################################
+
+Accuracy: 0.75676         (IC95 % de 0.66 A 0.85)
+Sensibilitat: 0.47826     (IC95 % de 0.36 A 0.59)
+Especificitat: 0.88235   (IC95 % de 0.81 A 0.96)
+Valor pred + (PPV): 0.64706 (IC95 % de 0.54 A 0.76)
+Valor pred - (NPV): 0.78947 (IC95 % de 0.70 A 0.88)
+LR+: 4.06522
+LR-: 0.59130
+Brier score final: 0.243 
+###############C O N F U S I O N   M A T R I X##############
+                              alzh    no alzh
+sumatoris (tp,fp) |  +test     11      6
+          (fn,tn) |  -test     12     45
+############################################################
+
+
+######################################
+mean_auc: 0.7547138047138047 std_auc 0.21809783737274122
+######################################
+
+
+
+
+##################################################
+RESULTAT DESPRES DE SUMAR ELS FP,TN,TP,FN DELS 10 FOLDs
+               (Gaussian Naive Bayes)
+####################################################
+
+Accuracy: 0.60811         (IC95 % de 0.50 A 0.72)
+Sensibilitat: 0.26087     (IC95 % de 0.16 A 0.36)
+Especificitat: 0.76471   (IC95 % de 0.67 A 0.86)
+Valor pred + (PPV): 0.33333 (IC95 % de 0.23 A 0.44)
+Valor pred - (NPV): 0.69643 (IC95 % de 0.59 A 0.80)
+LR+: 1.10870
+LR-: 0.96656
+Brier score final: 0.392 
+###############C O N F U S I O N   M A T R I X##############
+                              alzh    no alzh
+sumatoris (tp,fp) |  +test      6     12
+          (fn,tn) |  -test     17     39
+############################################################
+
+
+######################################
+mean_auc: 0.6296296296296295 std_auc 0.17983274122032067
+######################################
+
+
+
+
+##################################################
+RESULTAT DESPRES DE SUMAR ELS FP,TN,TP,FN DELS 10 FOLDs
+               (Support Vector Machines (linear kernel))
+####################################################
+
+Accuracy: 0.75676         (IC95 % de 0.66 A 0.85)
+Sensibilitat: 0.39130     (IC95 % de 0.28 A 0.50)
+Especificitat: 0.92157   (IC95 % de 0.86 A 0.98)
+Valor pred + (PPV): 0.69231 (IC95 % de 0.59 A 0.80)
+Valor pred - (NPV): 0.77049 (IC95 % de 0.67 A 0.87)
+LR+: 4.98913
+LR-: 0.66050
+Brier score final: 0.243 
+###############C O N F U S I O N   M A T R I X##############
+                              alzh    no alzh
+sumatoris (tp,fp) |  +test      9      4
+          (fn,tn) |  -test     14     47
+############################################################
+
+
+######################################
+mean_auc: 0.8215488215488215 std_auc 0.16536155673083283
+######################################
+
+
+
+
+##################################################
+RESULTAT DESPRES DE SUMAR ELS FP,TN,TP,FN DELS 10 FOLDs
+               (Nearest Neighbours)
+####################################################
+
+Accuracy: 0.66216         (IC95 % de 0.55 A 0.77)
+Sensibilitat: 0.26087     (IC95 % de 0.16 A 0.36)
+Especificitat: 0.84314   (IC95 % de 0.76 A 0.93)
+Valor pred + (PPV): 0.42857 (IC95 % de 0.32 A 0.54)
+Valor pred - (NPV): 0.71667 (IC95 % de 0.61 A 0.82)
+LR+: 1.66304
+LR-: 0.87664
+Brier score final: 0.338 
+###############C O N F U S I O N   M A T R I X##############
+                              alzh    no alzh
+sumatoris (tp,fp) |  +test      6      8
+          (fn,tn) |  -test     17     43
+############################################################
+
+
+######################################
+mean_auc: 0.5745723225521205 std_auc 0.17515865823748353
+######################################
+
+
+
+
+##################################################
+RESULTAT DESPRES DE SUMAR ELS FP,TN,TP,FN DELS 10 FOLDs
+               (Multilayer perceptron (ANN))
+####################################################
+
+Accuracy: 0.77027         (IC95 % de 0.67 A 0.87)
+Sensibilitat: 0.47826     (IC95 % de 0.36 A 0.59)
+Especificitat: 0.90196   (IC95 % de 0.83 A 0.97)
+Valor pred + (PPV): 0.68750 (IC95 % de 0.58 A 0.79)
+Valor pred - (NPV): 0.79310 (IC95 % de 0.70 A 0.89)
+LR+: 4.87826
+LR-: 0.57845
+Brier score final: 0.230 
+###############C O N F U S I O N   M A T R I X##############
+                              alzh    no alzh
+sumatoris (tp,fp) |  +test     11      5
+          (fn,tn) |  -test     12     46
+############################################################
+
+
+######################################
+mean_auc: 0.8114478114478114 std_auc 0.1634353422950835
+######################################

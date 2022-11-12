@@ -1,0 +1,83 @@
+%08/05
+
+%TRIPOD --> (4a) Describe the study design or source of data (eg randomized trial,cohort, or registry data. Separately for the development and validation data sets, if applicable. ()4B) Specify the key study dates, including start of actual; end of accrual; and, if apliccable, end of follow-up.
+
+%VOLCAT AL PROTOCOL
+
+\section{study design} %TRIPOD
+
+
+\section{source of data} \label{sourceofdata} %TRIPOD0
+		
+		We obtained the data for this study from the Alzheimer's Disease Neuroimaging Initiative (ADNI). The ADNI is a \textbf{multisite, longitudinal natural history study} that includes several cohorts: healthy subjects, Mild Cognitive Impairment (only in MCI), Early and Late Mild Cognitive Impairment (two new cohorts added on) and features a total 1837 \footnote{as measured using ADNIMERGE.csv}
+		
+		The study has freely available data (the investigator has to sign up and , later on, authorisation will be granted here: \footnote{http://adni.loni.usc.edu}). The ADNI has several stages: the ADNI 1, which spanned from 2004 to 2009; the ADNI-GO, from 2009-2011; the ADNI-2, from 2011-2016; and the ADNI 3, which began in late 2016. \cite{Protocol_ADNI3}. We won't be using data from the ADNI 1 since its participants were not receiving fMRI yet.
+		
+		All subjects that participate in it (ADNI 2) are scanned using structural MRI at baseline (SEGUR?), and have follow-up periods of six months\cite{adni2_protocol_extension}. Clinical and neuropsychological evaluations are held every time scanning is performed \cite{adni2_protocol_extension}. Routinelly collected data is done in a way that allows researchers to pair neuroimaging modalities with diagnostic information, especially at the baseline (SEGUR?). In some subjects, other markers are also available:
+
+		
+		\begin{description}
+		 	\item [imaging tests]: fMRI\footnote{See annex \ref{modalitats_fMRI} to see the fMRI modalities available, ordered by frequency}, PET
+		 	\item [bioespecimen biomarkers]: Tau in CSF, Amyloid beta in CSF, CSF BACE levels and enzyme activity, CSF sAPP$\beta$ levels, A$\beta$ 40 and A$\beta$ 42 in Plasma, APOE genotyping-blood, DNA from blood cells, RNA from blood cells, \textbf{afegits nous a l'ADNI 3 o posterir a protocol}
+		\end{description}
+			\url{https://adni.loni.usc.edu/wp-content/uploads/2008/07/adni2-procedures-manual.pdf} IMPORTANTISSIM... AQUI ET SURTEN MOLTES VARIABLES POSA HO. ES PER AL 2 PERO
+
+
+\section{Participants} %TRIPOD	
+	My study involves a subset of participants from the ADNI.
+	
+	
+	
+	
+	\subsection{Inclusion and exclusion criteria}
+ 
+	We only included MCI subjects with an fMRI scan at the baseline visit and a baseline diagnosis. 
+	
+	According to the ADNI 2 protocol MCI subjects in the ADNI were included only if they had: age between 55 and 90 years old (both inclusive) a study partner, a memory complaint by the own subject or the study partner -always verified by the study parter-, abnormal memory function (Wechsler Memory Scale - Revised \footnote{Thresholds are more restrictive depending on the higher educational level of the subject is} below equal or below to 8, 4 or 2 for $\geq$ 16, $\leq$ 4 and $\leq$ 2 years of education, respectively), an (MMSE\footnote{Mini-Mental State Examscore} score between 24 and 30 (inclusive)\footnote{Exceptions
+	could be made for subjects with less than 8 years of education at the
+	discretion of the project director}, a CDR\footnote{Clinical Demantia Rating} score of 0.5 with memory box score at least 0.5, general cognition and functional performance sufficiently preserved such that an AD diagnosis could not be made by the site physician at the time of the screening visit, a modified Hachinski score of $\leq$ 4. There also was the permission of taking certain medications such like antidepressants
+
+	
+	
+	
+	
+\section{Measures}%TPROTOCOL
+
+	\subsection{Outcome} %TRIPOD I PROTOCOL
+
+	 
+		The information is fragmented in different .csv files, .xml files for the metadata, and fMRI data is stored within .nii files (if we ask to save it as such when downloading it). The information is not distributed in a user-friendly way, hence the need to report how has the data been obtained from the ADNI neuroimaging study. To ensure proper and easy replicability of this study we refer the reader to Annex \ref{subsec_appendix_obteniribaixarInfoADNI}, where instructions as to how we downloaded the data can be followed.
+			
+
+
+	\subsection{Predictors}
+	
+
+
+\section{Statistical Analysis} %TRIPOD
+
+	%AQUI DINS DE SATAITSTICAL ANALYSIS POSA "COM EL SAMPLE SIZE WAS ARRIVED AT"
+		
+	\subsection{crossvalidation} \label{seccio_cross_Validation}
+		\textbf{AIXO ES MERDA. CAL BORRAR TROSSOS I REDACTAR DE NOUY}
+		For the original ADNI 1 there was a file (``CROSSVAL.csv'') that already
+		splitted the data into training and testing (60\% to train or derive the model and 40\% to test it) and created a 10-fold cross-validation stratifying in each of the 10 subsets by age (\textless 76 or \textgreater 76), pathology (MCI, NC or AD) and Study arm (1.5T, PET + 1.5T or 1.5T + 3T. \footnote{\href{http://bit.ly/2EwcImA}{http://bit.ly/2EwcImA}}
+				
+		Here we decided to stratify variables (age and disease stage -EMCI, LMCI-) between the \textit{development set} and the \textit{internal validation set}. Within the development set we performed a 10-fold-crossvalidation in order to estimate the parameters of our competing models avoiding data leakage.  
+			
+		Here Study Arm and pathology were homogeneous. We did found that EMCI and LMCI should be homogeneously distributed between the development set and the internal validation set. Therefore we stratified by this variable,
+			
+		CROSSVALIDATION -->  \href{(https://adni.loni.usc.edu/wp-content/uploads/2012/08/slide_data_training_part2_reduced-size.pdf)}{link posa referencia quan ho tinguis i organitza}
+		
+
+	\subsection{Software}
+			
+		LLEGEIX AIXO PER CITAR CORRECTAMENT \href{http://www.citethisforme.com/guides/vancouver/how-to-cite-a-software}{link}
+				
+		All analysis were performed using Python3, with proper libraries. PCA was carried out via scikitlearn\footnote{http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html}.Plots were performed using matplotlib library and seaborn\footnote{http://bit.ly/2nfPOpu}]. Neural networks were performed using Tensorflow\footnote{https://www.tensorflow.org/}. Autoencoders were performed using Keras frontend \footnote {https://keras.io/}. and Tensorflow backend.
+			
+
+			
+			
+			
+			

@@ -1,0 +1,88 @@
+\documentclass{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning} %posit. permet node dist ind
+
+\begin{document}
+\pagestyle{empty}
+
+
+% Define block styles
+
+\tikzstyle{block} = [rectangle, draw, fill=white!20, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+
+\tikzstyle{block-mostra-final} = [rectangle, draw, fill=green!20, 
+text width=5em, text centered, rounded corners, minimum height=4em]
+    
+\tikzstyle{blockPisInferior} = [rectangle, draw, fill=white!20, 
+text width=7em, text centered, rounded corners, minimum height=2em]
+
+\tikzstyle{blockPisSuperior-RESTA} = [rectangle, draw=none, fill=white!20, 
+text width=6em, text centered, rounded corners, minimum height=2em]
+
+\tikzstyle{blockPisSuperior-DESCRIPCIO} = [rectangle, draw=none, fill=white!20, 
+text width=7em, rounded corners, minimum height=3em] %text centered tret
+
+\tikzstyle{blockPisSuperior-DESCRIPCIO2} = [rectangle, draw=none, fill=white!20, 
+text width=7em, rounded corners, minimum height=1em, text centered] %text centered tret
+
+
+
+\tikzstyle{blockInvisible} = [rectangle, draw, fill=white!20, 
+text width=0em, text centered, rounded corners, minimum height=0em]
+
+
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+    
+    
+\begin{tikzpicture}[node distance = 1.7cm, auto]
+    % Place nodes (els horitzontals, mateixa linia)
+   
+    \node [block] (init) {332$^{a}$};
+    \node[blockInvisible, right of=init] (inv1){};
+    \node[block, right of=inv1] (93){93};
+    \node[blockInvisible, right of=93] (inv2){};
+    \node[block, right of=inv2] (90){90};
+    \node[blockInvisible, right of=90] (inv3){}; 
+    \node[block, right of=inv3] (74){n = 74}; 
+    \node[block-mostra-final, right of=inv3] (74){n = 74};   
+    
+    % Draw edges (els horitzontals, mateixa linia)
+    \path [line] (init) -- (93);
+    \path [line] (93) -- (90);
+    \path [line] (90) -- (74);
+    
+   
+    %place nodes (els que van sota i damunt dels invisibles)
+    %PIS INFERIOR
+    \node[blockPisInferior, below of=inv1] (incA){\textit{Inclusion\\ Criterion a$^{i}$}};
+    \node[blockPisInferior, below of=inv2] (ExC){\textit{Exclusion\\ Criterion$^{ii}$}};
+    \node[blockPisInferior, below of=inv3] (incC){\textit{Inclusion\\ Criterion c$^{iii}$}};
+    
+    %PIS SUPERIOR
+    \node[blockPisSuperior-RESTA, above of=inv1](incA-no-inclosos){\textit{-239}};
+    \node[blockPisSuperior-RESTA, above of=inv2](ExC-exclosos){\textit{-3}};
+    \node[blockPisSuperior-RESTA, above of=inv3](IncC-no-inclosos){\textit{-16}};
+    
+    \node[blockPisSuperior-DESCRIPCIO, above of=init, yshift=-0.4cm](desc-init){-MCI$^{a}$\\-$\geq$1 follow-up};
+    \node[blockPisSuperior-DESCRIPCIO2, above of=93, yshift=-0.6cm](desc-93){rsfMRI};
+    \node[blockPisSuperior-DESCRIPCIO2, above of=90, yshift=-0.6cm](desc-90){dx consistent};
+    \node[blockPisSuperior-DESCRIPCIO2, above of=74, yshift=-0.6cm](desc-74){final sample};
+
+    % Draw edges (els horitzontals, mateixa linia)
+    \path [line, dashed] (incA) -- (inv1);
+	\path [line, dashed] (ExC) -- (inv2); 
+	\path [line, dashed] (incC) -- (inv3); 	
+	
+	\path [line, dashed] (inv1) -- (incA-no-inclosos);	
+	\path [line, dashed] (inv2) -- (ExC-exclosos);	
+	\path [line, dashed] (inv3) -- (IncC-no-inclosos);
+
+\end{tikzpicture}
+
+
+\end{document}

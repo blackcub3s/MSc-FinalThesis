@@ -1,0 +1,45 @@
+D'entre els 93 subjectes, cal mirar el criteri d'exclusio per aquestos (veure apartat mètode). Avaluem inconsistència
+
+
+#####
+SUBJECTES AMB DIVERSOS D'ALZHEIMER ABANS MÉS DE 2 SEGUIMENTS CONSECUTIUS D'ALZHEIMER I CAP DAVALLADA EN SEVERITAT. ELS BONS!
+######
+
+053_S_4661 -- SUPER OK  	(super ok! 4 consecutive AD follow-ups before stop).
+019_S_4680 -- SUPER OK  	(es torna Alzheimer, 4 consecutius)
+130_S_4250 -- SUPER OK ----------- (2 MCI seguit de missing i 2 AD).
+006_S_4515 -- SUPER OK ------------- (multiples seguiments amb AD).
+130_S_4542 -- SUPER OK ------------------- (4 consecutius amb AD, amb missing pel mig. AD DE CALAIX :))
+013_S_4595 -- SUPER OK ------------------- (4 consecutius amb AD).
+002_S_0729 -- SUPER OK ---------(8 SEGUIMENTS AMB AD I ALGUNS MISSINGS PEL MIG! FLIPA... BONISSIM
+012_S_4094 -- SUPER OK ---------- (AD de calaix: 6 diagnostics consecutius, nomes la BL es diagnostic de MCI).
+006_S_4346 -- SUPER OK ------------- (3 seguiments MCI seguit de dos ADs consecuitus)
+136_S_4189 -- SUPER OK ---------- (bl MCI, despres 3 seguiments consecutius AD, amb dos missings pero be).
+031_S_4203 -- FORSA OK ---------- (2 MCI seguit de 2 AD amb alguns missings).
+002_S_4521 -- FORSA OK -------------------(dos consecutius amb AD)
+
+
+012_S_4188 -- OK -------------------(two consecutive AD and then stop follow up)
+130_S_4415 -- OK -------------------(but ends with two missings)
+
+
+###############################
+NOMES UN FOLLOWUP D'AD EN ACABAR
+###############################
+041_S_5026 -- ok PERO -------------------(only one AD follow-up before stop)
+002_S_4171 -- ok pero ----------  (noms seguiment final AD).
+013_S_1186 -- ok pero ----------  (NOMES UN SEGUIMENT D'ALZHEIMER ABANS DE LOSS OF FOLLOWUP)
+002_S_1268 -- ok pero ----------- (sempre deterioro cogntiiu lleu -8 consecutius, amb parell de missings-. Ultim DX es AD i llavors es deixa de seguir)
+031_S_4042 -- ok pero ----------- (3 MCIs seguits d'un sol AD i loss followup).
+018_S_4597 -- OK pero ----------  (only one AD follow-up before stop).
+130_S_2403 -- OK PERO -------------------(only one AD follow-up before one missing and stop).
+006_S_4363 -- ok pero ------------------- (tot MCI a excepcio del final, que es AD).
+
+#######
+OSCILACIONS. ELS ELIMINEM
+######
+
+002_S_4746 -- DOLENT ---------------- (4 consecutius de MCI (amb 2 missings entre mig). Dpesres 1 a AD i inmediatament despres de nou a MCI i depsres perdua followup. 
+031_S_4005 -- DOLENT -------------- (First 2 follow-ups AD. Then Goes back to MCI (2 consecutive followups corroborate the MCI). Then follow-up stops. 
+019_S_4293 -- potser dolent --------  també varia, oscila (mci --> ad --> mci --> ad)
+031_S_4947 -- POTSER DOLENT ----(MCI --> x --> AD --> MCI --> AD --> loss followup) --> varia, oscila ??

@@ -1,0 +1,47 @@
+ \documentclass[a4paper,12pt]{elsarticle}
+ \usepackage{booktabs}
+ \usepackage{threeparttable}
+ 
+
+
+
+
+
+ \begin{document}	
+ 		\begin{table}[]
+ 			\centering
+ 			\begin{threeparttable}
+ 				\caption{Demographic, biomarker and clinical information of our final sample\tnote{a}}
+ 				\label{my-label}
+ 				\begin{tabular}{lllll}
+ 					\toprule
+ 					variable & MCI-c & MCI-nc & statistic\tnote{b} & p-value \\
+ 					\midrule
+ 					n & 23 & 51 & - & -\\
+ 					age&73.0 (7.2)&70.7 (7.1)&1.27$_{t}$ &0.20716\\
+ 					male/female& 11/12&25/26&0.009$_{\tilde{\chi}^2}$&0.924\\
+ 					EMCI/LMCI & 7/16 & 35/16  &  9.421$_{\tilde{\chi}^2}$& 0.002*\\
+ 					total tau&357.1 (150.3)&270.1 (129.4)&294.00$_{mw}$ &  0.00157*\\
+ 					$p$tau&35.7 (17.4)&25.2 (13.8)&270.00$_{mw}$ &  0.00056*\\
+ 					A$\beta$&716.7 (280.1)&1101.7 (418.4)&219.50$_{mw}$ &  0.00005*\\
+ 					A$\beta/p$TAU&26.3 (25.3)&54.6 (29.3)&217.00$_{mw}$ &  0.00004*\\
+ 					FDG&1.2 (0.1)&1.3 (0.1)&-5.21$_{t}$&0.00000*\\
+ 					MMSE&27.7 (1.4)&28.0 (1.8)&492.00$_{mw}$&0.13066\\
+ 					ADAS11&11.9 (4.4)&7.6 (3.5)&4.48$_{t}$ &0.00003*\\
+ 					ADAS13&18.8 (6.6)&12.2 (5.5)&4.46$_{t}$ &0.00003*\\
+ 					ADASQ4& 6.0 (2.9)&4.2 (2.3)&379.00$_{mw}$ &0.00731\\
+ 					\bottomrule
+ 				\end{tabular}
+
+	 				\begin{tablenotes}
+	 					\item[a]{ We made 12 comparisons, so to account for multiple comparisons the $\alpha$ = 0.05 decision threshold used to reject $H_{o}$ was modified to be more strict by applying Bonferroni corrections ($\alpha_{corrected} = 0.05/11 = 0.0042$). *means stastistical significance according to the corrected decision boundary.}
+	 					\item[b]{For quantitative variables independent samples t-test($_{t})$ was applied, unless either between group homocedasticity and/or within group normality assumptions were violated: then, Mann-Whitney ($_{mw}$) test was employed). For cathegorical variables we used Chi-squared test ($_{\tilde{\chi}^2}$})
+	 					\item[c]{Quantitative variables are displayed as $mean (s.d.)$}
+	 				\end{tablenotes}
+ 			\end{threeparttable}
+ 		\end{table}
+ 		
+ 		
+ 		
+
+ \end{document}

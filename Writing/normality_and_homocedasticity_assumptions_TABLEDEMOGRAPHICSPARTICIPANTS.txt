@@ -1,0 +1,31 @@
+
+                SHAPIRO-WILK (NORMALITY)           |||     levene       BIVARIATE
+                   MCIc                 MCInc      |||   MCIc vs MCInc  DESCRIPTION
+AGE       0.95 (p = 0.37192) | 0.99 (p = 0.82052)  ||| 0.18 (p = 0.675)  -> [t]
+MMSE      0.92 (p = 0.06463) | 0.87 (p = 0.00004)* ||| 0.84 (p = 0.363)  -> [mw]
+TAU       0.90 (p = 0.02814) | 0.82 (p = 0.00000)* ||| 0.82 (p = 0.369)  -> [mw]
+PTAU      0.86 (p = 0.00528) | 0.78 (p = 0.00000)* ||| 1.02 (p = 0.316)  -> [mw]
+ABETA     0.80 (p = 0.00046) | 0.89 (p = 0.00040)* ||| 5.65 (p = 0.020)+ -> [mw]
+AB/PTAU   0.56 (p = 0.00000) | 0.94 (p = 0.01122)* ||| 8.26 (p = 0.005)+ -> [mw]
+FDG       0.96 (p = 0.57903) | 0.99 (p = 0.99551)  ||| 0.36 (p = 0.550)  -> [t]
+ADAS11    0.94 (p = 0.18154) | 0.97 (p = 0.14962)  ||| 0.98 (p = 0.326)  -> [t]
+ADAS13    0.97 (p = 0.70562) | 0.97 (p = 0.20240)  ||| 1.11 (p = 0.296)  -> [t]
+ADASQ4    0.90 (p = 0.02213) | 0.93 (p = 0.00683)* ||| 2.61 (p = 0.110)  -> [mw]
+___________________________________________________________________________________
+
+
+Ho (shapiro wilk): The null hypothesis, for this test, means that 
+the population of the corresponding subgroup (either MCIc or MCInc),
+for the givenvariable, is normally distributed. If "*" appears means that 
+we have to reject the Ho and thus the variable does not ajust a normal 
+distribution for that group.
+
+Ho (levene_test): There is homogeneity of variances (both groups have
+same variance), for a given variable. If "+" appears, it means that 
+we reject the Ho and therefore both groups are assumed not to 
+have the same variance.
+
+
+Thus, any variable (line) with any significant test result needs 
+the nonparametric option (mann whitney) [mw] instead of the parametric
+one (independent samples t-test) [t].

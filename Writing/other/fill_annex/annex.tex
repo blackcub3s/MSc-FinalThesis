@@ -1,0 +1,180 @@
+		
+
+			
+	
+	
+	
+POSA AQUI L'ANNEX QUE ESTA AL PROTOCOL EL DE CERQUES BIBLIOGRAFIQUES
+			
+
+		
+
+
+	\section{Data recollecting}
+		\subsection{Obtaining ADNI data} \label{subsec_appendix_obteniribaixarInfoADNI}
+	
+				In order to gather information about the baseline diagnosis, diagnosis disease changes, examdate, plus WHATEVER MES UTILITZIS FINALMENT... we downloaded a file that contains subject data for commonly used variables in the ADNI, called \textit{ADNI merge package for SPSS}. We download it on the 19/03/2018, following the instructions provided here: \cite{adni_data_training_part2} (p. 31, p. 40 - 44) \footnote{ADNIMERGE files are updated daily}. Within it, \textit{ADNIMERGE.csv} file was used to obtain subject information, whereas lines 5 - 117 of ADNIMERGE.sps (SPSS syntax file) contained variable names for the aforementioned \textit{.csv} file. Hence, those lines were parsed using a custom python script to create a proper header for the aforementioned ADNIMERGE.csv. ADNIMERGE.csv was then imported to ADNIMERGE.sav (SPSS statistics data document) and to a pandas dataframe object for further analysis using Python
+		scientific libraries.
+		
+		\section{fMRI modalities in the ADNI} \label{modalitats_fMRI}
+		
+		\begin{center}
+			\begin{tabular}{l c}
+				\hline
+				\textbf{Imaging modality} & \textbf{total scans}\\
+				\hline
+				MoCoSeries&1645\\
+				relCBF&1638\\
+				Perfusion Weighted&1631\\
+				ASL PERFUSION&1510\\
+				Resting State fMRI&739\\
+				Axial rsfMRI (Eyes Open)&174\\
+				Extended Resting State fMRI&125\\
+				ASL PERFUSION-EYES OPEN&45\\
+				Axial fcMRI (EYES OPEN)&32\\
+				Axial 2D PASL&24\\
+				Axial rsfMRI (EYES OPEN)&24\\
+				ASL PERFUSION (EYES OPEN)&23\\
+				Axial 2D PASL (EYES OPEN)&21\\
+				Axial MB rsfMRI (Eyes Open)&18\\
+				ASL&18\\
+				ASL PERFUSION NO ANGLE&17\\
+				Axial fcMRI (Eyes Open)&11\\
+				Axial RESTING fcMRI (EYES OPEN)&7\\
+				Axial 3D PASL (Eyes Open)&6\\
+				Axial rsfMRI (Eyes Open) 10 min :-PJ&5\\
+				Extended AXIAL rsfMRI EYES OPEN&3\\
+				SOURCE - Axial 2D PASL&2\\
+				ASL PERFUSION EYE OPEN&2\\
+				AXIAL RS fMRI (EYES OPEN)&2\\
+				ASL PERFUSION-open eyes&1\\
+				Axial 2D PASL straight no ASL&1\\
+				ASL PERFUSION eyes open&1\\
+				sWIP WIP b1CAL PCASL SENSE&1\\
+				Extended Resting State fMRI CLEAR&1\\
+				ASL PERFUSION   INSTRUCT PT TO KEEP EYES OPENED&1\\
+				WIP b1CAL PCASL SENSE&1\\
+				ASL PERFUSION straight no angle cover temporal lobes&1\\
+				ASL PERFUSION repeat&1\\
+				epi 2s resting state&1\\
+				Axial fcMRI (EYES OPEN) REPEAT&1\\
+			\end{tabular}{}
+		\end{center}
+		%AIXO QUE CONTINUA HAURIA D'ANAR A L'APENDIX!
+		
+ 
+		
+
+		
+	\section{figures}
+	
+	\section{tables}
+	
+	\subsection{Freely available neuroimaging data for researchers} \label{taula_datasets}
+	\begin{center}
+		\begin{tabular}{c c c c c}
+			\hline
+			\textbf{DATASET} & \textbf{Illness} & \textbf{MRI modality} & \textbf{Healthy} & \textbf{Ill}\\
+			\hline
+			\href{https://ida.loni.usc.edu/collaboration/access/appLicense.jsp}{ADNI} & Alzheimer & s/fMRI* & 350 & $>$1000 \\
+			\href{https://www.nitrc.org/frs/?group_id=383}{ADHD} 200 & ADHD & s/fMRI & 585 & 362\\
+			\href{http://www.ppmi-info.org/data}{PPMI}-&-&-&-&-\\
+			\href{http://bit.ly/2nVIgqW}{Abide I} & Autism & rs-fMRI & 573 & 579\\
+			\href{http://fcon_1000.projects.nitrc.org/indi/abide/abide_II.html}{Abide 2} & Autism & -- & -- & --\\
+			\href{http://preprocessed-connectomes-project.org/abide/}{Abide} \href{https://github.com/preprocessed-connectomes-project/abide}{preproc} & Autism & s/fsMRI & 573 & 539\\
+			\hline 
+			\href{https://ida.loni.usc.edu/login.jsp}{\textit{IDA}} & \textit{--} & \textit{--} & -- & --\\
+			\hline	
+		\end{tabular}{}
+	\end{center}
+
+	\section{Reporting: EQUATOR guidelines} \label {equator_guidelines}
+	
+		\subsection{Creating a tailored guideline for our study}
+	In this final thesis I chose the {TRIPOD checklist, in its prediction model development and validations version}, to report my results (\href{https://bit.ly/2HU58V5}{click here} to see them \footnote{or copy the following footnote adress https://bit.ly/2HU58V5}). However, since this study has some particularities that regular prognostic studies do not have, some features were uncovered and not asked to be reported. 
+	
+	To overcome this limitation, I decided to add three extra guidelines. First, the STARD guidelines, that are used in diagnostic studies; Second, the MLBS guidelines\footnote{These guidelines do not have an oficial abreviation. We have created one that stands for Machine Learning in the Biomedical Sciences}, to report correctly the created machine learning models in our study, since their complexity makes it harder to convey good reporting; And finally, the RECORD guidelines, in order to properly specify the process of obtaining the information from a database fed with routinely collected data from observational studies (the ADNI belongs to that category, since it is a cohort study with regular follow-ups).
+	
+	The EQUATOR links for the guidelines used can be found and explained in the following table (to understand the meaning of the third column, please, see \ref{final-guideline-used})
+		
+		\begin{center}
+			\begin{table}[h] 
+				\begin{tabular}{m{3cm} m{7.4cm} m{2cm}}
+					\hline
+					\textbf{Guideline\newline abbreviation} & \textbf{repoting\newline aim} & \textbf {in-text\newline color}\\
+					\hline
+					\href{http://www.equator-network.org/reporting-guidelines/tripod-statement/}{TRIPOD} & Studies developing, validating, or updating a prediction model, whether for diagnostic or prognostic purposes. & black\\
+					\hline
+					\href{http://www.equator-network.org/reporting-guidelines/stard/}{STARD} & Diagnostic accuracy studies & \color{red}red\\
+					\hline
+					\href{http://www.equator-network.org}{RECORD} & Reporting items specific to observational studies using routinely collected health data. & \color{blue}blue\\
+					\hline
+					\href{http://www.equator-network.org/reporting-guidelines/guidelines-for-developing-and-reporting-machine-learning-predictive-models-in-biomedical-research-a-multidisciplinary-view/}{MLBS}$^{***}$ & Machine learning predictive models in biomedical research & \color{green}green \\
+					
+					\hline	
+				\end{tabular}{}
+			\caption{EQUATOR guidelines that have been used for reporting this pronostic study. $^{***}$ \textit{These guidelines do not have an oficial abreviation. We have created one, that stands for Machine Learning in the Biomedical Sciences}}
+			\end{table}
+		\end{center}
+		
+			\subsubsection{Final guideline used} \label{final-guideline-used}
+			
+			
+			Here we report the final guideline used in doing this master thesis. As we said its skeleton is built upon the Tripod guidelines (black text), whereas STARD, RECORD and MLBS checklists act as add-ons I considered to be merged with our main TRIPOD guidelines.
+			
+			A code of colors has been used. Please, see the table belonging to \ref{equator_guidelines}
+
+	POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)	POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)
+		POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)
+		POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)
+		POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)
+		POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)
+		POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)
+		POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)
+		POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)
+		POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)
+		POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)
+		POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)
+		POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)
+		POSA GUIDELINES ACABADES AQUI (APARTAT ANNEX, ON HI HA EL WORD)
+	
+
+		
+	\section{treating 3D matrices with Python, numpy and nibabel}
+		
+		A key element any scientist must understand when dealing with neuroimage files (such as .nii, the ones used in this thesis) is how they are stored: namely, how many dimensions the data has, how this data is structured within the object that contains it and finally where the reference system or the \textbf{center of the coordinate axis is [----esta ben dit?]}.
+		
+		Within a structural MRI image we have 3-dimensional data (as we are in a 3D space). The atomic elements that compose it are the so-called \textit{voxels}, each of which can be thought of as a ``pixel with volume'', to establish a simile with the digital photography. This voxels, in a structural MRI file like the files (nifti with .nii extension) containing the MRI part of the dataset used follow a grey scale with values ranging from 0 to 255 \cite{Fisher2003} \textbf{       FALTA A CONSEGUIR QUE SURTI LA DATA DE CONSULTA A LA REFERENCIA I A MES ELS ONLINE ELS CITA MALAMENT     }
+		
+		To store all that data there is the evident need to do it with a relative order that preserves the ``original'' distances between them. That is where tensors (in the maths language) or n-dimensional arrays (in the programming language we have used) come into place.
+		
+		\section{What is a tensor?}
+		
+		A tensor can be a broader concept, or a narrower one depending on the author and/or the discipline it is used on. According to this class notes of the Universitat Politècnica de Catalunya \url{http://bit.ly/2queO0w} in physics a tensor can be understood as any of the following (1 - 4 ) were:
+		
+		\begin{description}
+			\item[Zero order tensor (Scalar)]: for example, if we take the body weight of a single person or the mean blood preassure of a person, we have a Scalar. It's just a single number.
+			\item[First order tensor (Vector)] In physics, magnitudes such like speed, are only defined with different features (i.e, direction and module). However, in computer science or data science, we can consider vectors to be collections of elements in one dimension, regardless if they are defining a magnitude or not. For example, if we took a set of blood pressure measurements for a given person we might have this first order tensor: $ (120,134,134,156) $
+			
+			
+			\item[Second order tensor (Matrix)] A matrix could be used to represent,for example, several subjects whose blood pressure has been measured. If we added two more measurements to the one we already had, each subject would be added to. As we know, This is the most common structure used when storing data in a SPSS spreadsheet where variables get defined by columns and instances are registered in rows.
+			
+			 
+			\item[k order tensor (mulitdimensional-matrix)] A third (and beyond) order tensor is what is considered in the natural language as a tensor, per se. In this notes from Stanford university (\url{http://theory.stanford.edu/~tim/s17/l/l10.pdf}) they give us the most easy definition we might happen to find: ``matrix but with more dimensions''. They also give us a zero, first, second, etc. order tensor definition using analytical notation and generalizing to how is defined in  UPC notes:
+			\begin{align*}
+				 n_{1} \ x \ n_{2} \ x \ n_{3} \ x \ ... \ x \ n_{k}
+			\end{align*}	
+
+			
+			
+			https://docs.scipy.org/doc/numpy-1.13.0/reference/arrays.ndarray.html
+			
+			
+				
+		\end{description}
+		Yet, according to others a collection of elements would only receive the name of a tensor when it matches the definition of the last third item. This is how they define it in this class notes from Standford University: \url{http://theory.stanford.edu/~tim/s17/l/l10.pdf}
+		
+		Therefore, each file of a structural MRI will be natively composed of a three dimensional matrix where each element will either be a voxel or a ``super voxel'' (i.e. a region of interest or ROI). Similarly, an fMRI will be natively stored as a stack of three dimensional matrices (as much as sampled time series). You can think of it as a stack of 3D matrices, one for each spatial dimension.
+
+		
+		\textbf{citar a alguna banda: https://docs.scipy.org/doc/numpy-1.13.0/reference/arrays.ndarray.html}

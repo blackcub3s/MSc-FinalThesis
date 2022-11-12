@@ -1,0 +1,9 @@
+\toprule
+Brier Scores & H.L. test\
+\midrule
+0.243& HOSMER SIMPSON\\
+0.392& HOSMER SIMPSON\\
+0.243& HOSMER SIMPSON\\
+0.338& HOSMER SIMPSON\\
+0.230& HOSMER SIMPSON\\
+\bottomrule

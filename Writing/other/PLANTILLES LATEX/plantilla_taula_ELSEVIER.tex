@@ -1,0 +1,29 @@
+\documentclass{elsarticle}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+
+\begin{document}
+
+\begin{table}[]
+  \centering
+  \begin{threeparttable}
+    \caption{Row sub numbering}
+    \label{my-label}
+    \begin{tabular}{llll}
+      \toprule
+      S. No. & X & Y & Z \\
+      \midrule
+      1 & 1 & 12 & 1 \\
+      2 & 4 & 34 & 3 \\
+      3 & 5 & 54 & 2\tnote{a} \\
+      4 & 1 & 44 & 7 \\
+      5 & 4 & 11 & 4 \\
+      \bottomrule
+    \end{tabular}
+    \begin{tablenotes}
+      \item[a]{Footnote}
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table}
+
+\end{document} 
