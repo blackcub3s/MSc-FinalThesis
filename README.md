@@ -7,7 +7,7 @@ This repository contains my MSc's final thesis and the the most important progra
 - [DataAnalysis](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis): this folder contains the most important programs I made in Python to do the analysis. Within the sub folder [inContext](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis/inContext) you'll find the same programs, but in contextx with some of the raw data behind (and other files that contributed to the development of the final thesis)[^1]. The most important files are:
 
 
-    * [mira_dades.py](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis/inContext/mira_dades.py): **lorem ipsum sit amet**
+    * [mira_dades.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/mira_dades.py): **lorem ipsum sit amet**
     * [a. fes_merge_en_tensor_3d (obte l'array 3d).py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obte%20l'array%203d).py): **lorem ipsum sit amet**
     * [b. analisisfinal.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py): **lorem ipsum**
 
