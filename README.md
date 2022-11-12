@@ -1,9 +1,14 @@
 # REPOSITORY DESCRIPTION
 
 This repository contains 
-- TFM_FINAL_santiagosanchez.pdf: the final thesis as was handed in to the university. You can find its abstract down below
+- [TFM_FINAL_santiagosanchez.pdf](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/TFM_FINAL_santiagosanchez.pdf): the final thesis as was handed in to the university. You can find its abstract down below
 - [Writing](https://github.com/blackcub3s/MSc-FinalThesis/tree/main/Writing): Contains the LaTeX files and figures that were put together in order to compile /TFM_FINAL_santiagosanchez.pd.
-- [DataAnalysis](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis): this folder contains the most important programs I made in Python to do the analysis. Within the folder ./DataAnalysis/inContext you'll find the same programs as before, but now in context, with some of the raw data behind (and other files that contributed to the development of the final thesis). Lots of files are missing as github has limited space, so this is a simplification of the directories of my final thesis, not an exhaustive tour to it!
+- [DataAnalysis](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis): this folder contains the most important programs I made in Python to do the analysis. Within the folder [DataAnalysis/inContext](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis/inContext) you'll find the same programs as before, but now in context, with some of the raw data behind (and other files that contributed to the development of the final thesis). Lots of files are missing as github has limited space, so this is a simplification of the directories of my final thesis, not an exhaustive tour to it! The most important files are:
+    - lorem ipsum
+    -[mira_dades](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis/inContext/mira_dades.py): **lorem ipsum sit amet**
+    -[b.analisisfinal](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b. analisisfinal): **lorem ipsum**
+    
+
 
 ## ABSTRACT
 
@@ -31,10 +36,10 @@ and the Support Vector machines also obtained reasonable diagnostic accuracies
 (75.68%, both of them). The models cannot be deployed to clinical
 practice yet: further research is needed to increase sensitivity.
 
-## ./Writing:
+## [Writing](https://github.com/blackcub3s/MSc-FinalThesis/tree/main/Writing):
 
 lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet 
 
-## ./DataAnalysis
+## [DataAnalysis](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis)
 
 lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet lorem ipsum sit amet  asd
