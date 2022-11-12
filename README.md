@@ -5,7 +5,7 @@ This repository contains
 - [Writing](https://github.com/blackcub3s/MSc-FinalThesis/tree/main/Writing): Contains the LaTeX files and figures that were put together in order to compile /TFM_FINAL_santiagosanchez.pd.
 - [DataAnalysis](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis): this folder contains the most important programs I made in Python to do the analysis. Within the sub folder [inContext](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis/inContext) you'll find the same programs, but in contextx with some of the raw data behind (and other files that contributed to the development of the final thesis)[^1]. The most important files are:
 
-    * lorem ipsum: **qw lkasjd lkajsdlk jas d**
+    * lorem ipsum: **qw lkasjd lkajsdlk jas  asdd**
     * [mira_dades](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis/inContext/mira_dades.py): **lorem ipsum sit amet**
     * [b.analisisfinal](https://github.com/blackcub3s/FIB-PRO1/tree/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b. analisisfinal): **lorem ipsum**
     
