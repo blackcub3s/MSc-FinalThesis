@@ -1,0 +1,11 @@
+
+
+component    valor_propi     variansssa_explicada_per_component (tant per cent)
+   1             5.60                64.00
+   2             1.65                18.87
+   3             1.06                12.15
+   4             0.44                 4.98
+   5             0.00                 0.00
+
+**** Varianssa de les dades
+explicada amb 5retinguts: 100.00
