@@ -22,7 +22,10 @@ This repository contains my MSc's final thesis and the the most important progra
 
         The most important inclusion criteria within that function was how I decided to filter out the subjects who would not convert to alzheimer(see footnote to understand the reasoning [^6] I followed). I ended up choosing the criterion of considering those who wouldn't turn to alzheimer's (MCI-nc) as those subjects who hadn't turn to alzheimers in a time period t such that:
 
-             $t > μ + n*ρ$
+            ```math
+            t > μ + n*ρ
+            ```
+             
 
         Where  
         
@@ -32,7 +35,7 @@ This repository contains my MSc's final thesis and the the most important progra
 
         In the code I wrote this:
 
-            https://github.com/blackcub3s/MSc-FinalThesis/blob/a2479224491c308d72a412e4dc2724107a830fe0/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L108-L111
+        https://github.com/blackcub3s/MSc-FinalThesis/blob/a2479224491c308d72a412e4dc2724107a830fe0/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L108-L111
 
         
 
