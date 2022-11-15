@@ -29,8 +29,8 @@ The packages I've used in this thesis are [sklearn](https://scikit-learn.org/sta
 
 [^1]: Lots of files are missing as github has limited space, so this is a simplification of the directories of my final thesis, not an exhaustive tour to it!
 [^2]: the fMRIs came from a neuroimaging project called ADNI. The [ADNI](https://adni.loni.usc.edu/)(Alzheimer's disease neuroimaging iniciative) gathered together high quality, free to use data on the alzheimer's disease, an without this data this thesis wouldn't have been possible.
-[^3] NIFTI files are not here, as they occupy several Gigabytes of data. This is just for showcasing purposes.
-[^4] Region of Interest (ROI).
+[^3]: NIFTI files are not here, as they occupy several Gigabytes of data. This is just for showcasing purposes.
+[^4]: Region of Interest (ROI).
 
 # ABSTRACT
 
