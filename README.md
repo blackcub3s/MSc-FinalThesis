@@ -32,7 +32,7 @@ This repository contains my MSc's final thesis and the the most important progra
             ρ = standard deviation of those who turned to AD
             n = 1.85 (arbitrary number, but if we consider the distribution of time for MCIc to be normal, that would way above the central tendency of the data).
 
-        In the code I stored the subjects of analysis within the $df_MCInc$ dataframe, by writing this:
+        In the code I stored the subjects of analysis within the `df_MCInc` dataframe, by writing this:
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/a2479224491c308d72a412e4dc2724107a830fe0/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L108-L111
 
