@@ -20,20 +20,19 @@ This repository contains my MSc's final thesis and the the most important progra
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L48-L243
 
-        The most important inclusion criteria within that function was how I decided to filter out the subjects who would not convert to Alzheimer's (see the footnote to understand the reasoning [^6] I followed). I ended up choosing the criterion of considering those who wouldn't turn to alzheimer's (MCI-nc) as those subjects who hadn't turn to alzheimers in a time period t such that:
+        The most important inclusion criteria within that function was how I decided to filter out the subjects who would not convert to Alzheimer's (see the footnote to understand the reasoning [^6] I followed). I ended up choosing the criterion of considering those who wouldn't turn to alzheimer's (MCI-nc) as those subjects who hadn't turn to alzheimers above the time period $t$ such that:
 
         
         $$ t > μ + n*ρ $$
        
-             
-
+            
         Where  
         
             μ = 2.3 years (average time of turning to alzheimers for those who turn)
             ρ = standard deviation of those who turned to AD
             n = 1.85 (arbitrary number, but if we consider the distribution of time for MCIc to be normal, that would way above the central tendency of the data).
 
-        In the code I wrote this:
+        In the code I stored the subjects of analysis within the $df_MCInc$ dataframe, by writing this:
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/a2479224491c308d72a412e4dc2724107a830fe0/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L108-L111
 
