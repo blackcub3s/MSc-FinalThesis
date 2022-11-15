@@ -23,7 +23,7 @@ This repository contains my MSc's final thesis and the the most important progra
         The most important inclusion criteria within that function was how I decided to filter out the subjects who would not convert to Alzheimer's (see the footnote to understand the reasoning [^6] I followed). I ended up choosing the criterion of considering those who wouldn't turn to alzheimer's (MCI-nc) as those subjects who hadn't turn to alzheimers in a time period t such that:
 
         
-        $ t > μ + n*ρ $
+        $$ t > μ + n*ρ $$
        
              
 
