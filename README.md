@@ -8,12 +8,9 @@ This repository contains my MSc's final thesis and the the most important progra
 
 
     * [mira_dades.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/mira_dades.py): In this script the most important functions are these:
+        1. Merge two datasets with complementary information (see `IMPORTANT_depura_ADNI_MERGE_i_ARXIU_fMRIs()`)
+        2. See which subjects convert to alzheimer's and which do not: see `temps_de_conversio(SUBMODALITAT_fMRI):` 
 
-        1. Merge two datasets with complementary information:
-        https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/mira_dades.py#L176-L393
-
-        2. See which subjects convert to alzheimer's and which do not:
-        https://github.com/blackcub3s/MSc-FinalThesis/blob/8da3a6f9b98f701d38a211b187d935e1bac1f7d4/DataAnalysis/inContext/mira_dades.py#L523-L953
 
     * [a. fes_merge_en_tensor_3d (obte l'array 3d).py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obte%20l'array%203d).py): **lorem ipsum sit amet**
     * [b. analisisfinal.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py): **lorem ipsum**
