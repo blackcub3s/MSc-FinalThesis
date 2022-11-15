@@ -15,7 +15,7 @@ This repository contains my MSc's final thesis and the the most important progra
     * [a. fes_merge_en_tensor_3d (obte l'array 3d).py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obteArray3d).py): In this file the most important snippet of code is the funcion `fes_merge(n_timeseries)` (see down below). 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/bd8e13d5ad14fc7103469cd7c6f38da0e5008288/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obteArray3d).py#L39-L114
 
-        On the one hand, this function went around around each folder name of syntax "SUBJECTID__UID" and got the SUBJECTID (identifier for subject) and LLUID (identifier for scanner type made to a given subject) to save them in list objects and finally store them in respective .txt files (`__subjectes.txt` and `__uids.txt`). On the other hand, the function also went into each folder to find `total.txt` a file that contained the information from fMRI data from .NIFTI files *after* registering it to Shen's atlas[^3] via FSL. The information inside `total.txt` was stored as plain text, with shape `(214,140)` (the first dimension was the number of ROIs[^4] of Shen's atlas -214- and the second one was the number of time series data available -140 time series data points for each ROI- for each subject) and finally I stacked together all these matrices as a numpy ndarray object (.npy) to have it all within one single file: (`__arr_ADNI_3d_preprocessada.npy`).
+        On the one hand, this function went around around each folder name of syntax *"SUBJECTID__UID"* and got the *"SUBJECTID"* (identifier for subject) and *"LLUID"* (identifier for scanner type made to a given subject) to save them in list objects and finally store them in respective .txt files (`__subjectes.txt` and `__uids.txt`). On the other hand, the function also went into each subject folder to find `total.txt` a file that contained fMRI data extracted from .NIFTI files *after* registering that information to Shen's atlas[^3] via FSL. The information inside each subject's `total.txt` was structured as shape `(214,140)` (the first dimension being the Regions of interest (ROIs[^4]) of Shen's atlas -214- and the second one was the number of time series data points available -140 time series data points for each ROI-) and finally I stacked together all these matrices as a numpy ndarray object (.npy) to have it all within one single file ([__arr_ADNI_3d_preprocessada.npy](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/__arr_ADNI_3d_preprocessada.npy)) of shape `(93,214,140)[^5]. 
 
     * [b. analisisfinal.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py): **lorem ipsum**
 
@@ -27,12 +27,14 @@ This repository contains my MSc's final thesis and the the most important progra
 
 The packages I've used in this thesis are [sklearn](https://scikit-learn.org/stable/) for machine learning, [matplotlib](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org/) for graph generation and visualization, [pandas](https://pandas.pydata.org/) for data analysis, [numpy](https://numpy.org/) for treating the multidimensional arrays that came out of the NIFTI files that came out of the fMRIs[^2].
 
+
 [^1]: Lots of files are missing as github has limited space, so this is a simplification of the directories of my final thesis, not an exhaustive tour to it!
 [^2]: the fMRIs came from a neuroimaging project called ADNI. The [ADNI](https://adni.loni.usc.edu/)(Alzheimer's disease neuroimaging iniciative) gathered together high quality, free to use data on the alzheimer's disease, an without this data this thesis wouldn't have been possible.
 [^3]: NIFTI files are not here, as they occupy several Gigabytes of data. This is just for showcasing purposes.
 [^4]: Region of Interest (ROI).
+[^5]: (93,214,140) --> (SUBJECTS, ROIs,TIME SERIES)
 
-# ABSTRACT
+# FINAL THESIS ABSTRACT
 
 In the last years scientists have tried to develop predictive models for
 forecasting a future onset of Alzheimer's disease (AD) in people with Mild
