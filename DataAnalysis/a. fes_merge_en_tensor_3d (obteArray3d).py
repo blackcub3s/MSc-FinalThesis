@@ -17,7 +17,7 @@ def arregla_cagada():
 	de les que toquen als arxius total.txt (a excepció del primer, que n'hi ha el triple pel que hem dit).
 
 	El make vector entenc que concatena les noves linies al mateix arxiu XDD total.txt en comptes de borrar 
-	el total.txt que hi havia abans.
+	el total.txt que hi havia abans. 
 	"""
 	j = 0
 	carpetes = os.listdir(os.getcwd())
