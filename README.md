@@ -13,9 +13,16 @@ This repository contains my MSc's final thesis and the the most important progra
     * [a. fes_merge_en_tensor_3d (obte l'array 3d).py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obteArray3d).py): In this file the most important snippet of code is the funcion `fes_merge(n_timeseries)` (see down below). 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/bd8e13d5ad14fc7103469cd7c6f38da0e5008288/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obteArray3d).py#L39-L114
 
-        On the one hand, this function went around around each folder name of syntax *"SUBJECTID__UID"* and got the *"SUBJECTID"* (identifier for subject) and *"LLUID"* (identifier for scanner type made to a given subject) to save them in list objects and finally store them in respective .txt files (`__subjectes.txt` and `__uids.txt`). On the other hand, the function also went into each subject folder to find `total.txt` a file that contained fMRI data extracted from .NIFTI files *after* registering that information to Shen's atlas[^3] via FSL. The information inside each subject's `total.txt` was structured as shape `(214,140)` (the first dimension being the Regions of interest (ROIs[^4]) of Shen's atlas -214- and the second one was the number of time series data points available -140 time series data points for each ROI-) and finally I stacked together all these matrices as a numpy ndarray object (*.npy*) to have it all within one single file ([__arr_ADNI_3d_preprocessada.npy](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/__arr_ADNI_3d_preprocessada.npy)) of shape `(93,214,140)`[^5]. 
+        On the one hand, this function went to each folder name of syntax *"SUBJECTID__UID"* and got the *"SUBJECTID"* (identifier for subject) and *"LLUID"* (identifier for scanner type made to a given subject) to save them in list objects and finally store them in respective .txt files (`__subjectes.txt` and `__uids.txt`). On the other hand, the function also went into each subject folder to find `total.txt` a file that contained fMRI data extracted from .NIFTI files *after* registering that information to Shen's atlas[^3] via FSL. The information inside each subject's `total.txt` was structured as shape `(214,140)` (the first dimension being the Regions of interest (ROIs[^4]) of Shen's atlas -214- and the second one was the number of time series data points available -140 time series data points for each ROI-) and finally I stacked together all these matrices as a numpy ndarray object (*.npy*) to have it all within one single file ([__arr_ADNI_3d_preprocessada.npy](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/__arr_ADNI_3d_preprocessada.npy)) of shape `(93,214,140)`[^5]. 
 
-    * [b. analisisfinal.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py): **lorem ipsum**
+    * [b. analisisfinal.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py): The most important functions of this file are:
+        *`fes_dataframe_despres_dels_3_criteris_dinclusio(d)': This function narrowed down the subjects that went into the machine learning models according to inclusion criteria of the methods section of my final thesis. 
+
+        https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L48
+
+        The most important inclusion criteria within that function was how I decided to filter out the subjects who would not convert to alzheimer(see footnote to understand the reasoning [^6] I followed). I ended up choosing the following criteria.
+
+        **lorem ipsum**
 
     There are also other files, which have relevance:
 
@@ -31,6 +38,7 @@ The packages I've used in this thesis are [sklearn](https://scikit-learn.org/sta
 [^3]: NIFTI files are not here, as they occupy several Gigabytes of data. This is just for showcasing purposes.
 [^4]: Region of Interest (ROI).
 [^5]: `(93,214,140) --> (SUBJECTS, ROIs,TIME SERIES)`
+[^6]: In my final thesis I took subjects that were at risk of developing Alzheimer's disease but didn't have the disease (these are what are called *Mild Cognitive Impairment* or MCI). At the moment of diagnosis as MCI, they had to undergo a brain fMRI scan. Then time went on and after some years some of them became Alzheimer's disease (MCI-c), and some didn't (MCI-nc). The ones who I labeled as MCI-c are clear to label, but the ones who are MCI-nc are not clear (because there might be not enough longitudinal data because the patient might die, get discontinued from the study). So it was important to choose a criterion to decide how many years of follow up are *enough* for a patient to be considered free of Alzheimer's. 
 
 # FINAL THESIS ABSTRACT
 
