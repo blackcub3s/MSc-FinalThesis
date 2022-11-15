@@ -16,13 +16,15 @@ This repository contains my MSc's final thesis and the the most important progra
         On the one hand, this function went to each folder name of syntax *"SUBJECTID__UID"* and got the *"SUBJECTID"* (identifier for subject) and *"LLUID"* (identifier for scanner type made to a given subject) to save them in list objects and finally store them in respective .txt files (`__subjectes.txt` and `__uids.txt`). On the other hand, the function also went into each subject folder to find `total.txt` a file that contained fMRI data extracted from .NIFTI files *after* registering that information to Shen's atlas[^3] via FSL. The information inside each subject's `total.txt` was structured as shape `(214,140)` (the first dimension being the Regions of interest (ROIs[^4]) of Shen's atlas -214- and the second one was the number of time series data points available -140 time series data points for each ROI-) and finally I stacked together all these matrices as a numpy ndarray object (*.npy*) to have it all within one single file ([__arr_ADNI_3d_preprocessada.npy](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/__arr_ADNI_3d_preprocessada.npy)) of shape `(93,214,140)`[^5]. 
 
     * [b. analisisfinal.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py): The most important functions of this file are:
-        *`fes_dataframe_despres_dels_3_criteris_dinclusio(d)': This function narrowed down the subjects that went into the machine learning models according to inclusion criteria of the methods section of my final thesis. 
+        `fes_dataframe_despres_dels_3_criteris_dinclusio(d)`: This function narrowed down the subjects that went into the machine learning models according to inclusion criteria of the methods section of my final thesis. 
 
-        https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L48
+        https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L48-L243
 
-        The most important inclusion criteria within that function was how I decided to filter out the subjects who would not convert to alzheimer(see footnote to understand the reasoning [^6] I followed). I ended up choosing the following criteria.
+        The most important inclusion criteria within that function was how I decided to filter out the subjects who would not convert to alzheimer(see footnote to understand the reasoning [^6] I followed). I ended up choosing the following criteria:
 
-        **lorem ipsum**
+        https://github.com/blackcub3s/MSc-FinalThesis/blob/a2479224491c308d72a412e4dc2724107a830fe0/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L108 - L111
+
+        
 
     There are also other files, which have relevance:
 
