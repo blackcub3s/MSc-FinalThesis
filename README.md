@@ -12,7 +12,7 @@ This repository contains my MSc's final thesis and the the most important progra
         2. See which subjects convert to alzheimer's and which do not: see `temps_de_conversio(SUBMODALITAT_fMRI)` 
 
 
-    * [a. fes_merge_en_tensor_3d (obte l'array 3d).py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obteArray3d).py): In this file the most important snippet of code is the funcion `fes_merge(n_timeseries)`. On the one hand, this function went around around each folder name of syntax "SUBJECTID__LLUID" and got the SUBJECTID and LLUID to save it in list objects, and on the other, went into each folder to find a .txt file of each subject (this .txt came out from original .NIFTI files[^3] after registering them on Shen's atlas  and) which contained a matrix with plain text of shape `(214,140)`, where the first dimension where the 214 ROIs of Shen's atlas and 140 where the number of time series data available.
+    * [a. fes_merge_en_tensor_3d (obte l'array 3d).py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obteArray3d).py): In this file the most important snippet of code is the funcion `fes_merge(n_timeseries)` (see down below). On the one hand, this function went around around each folder name of syntax "SUBJECTID__UID" and got the SUBJECTID and LLUID to save it in list objects, and on the other, went into each folder to find a .txt file of each subject (this .txt came out from original .NIFTI files[^3] after registering them on Shen's atlas  and) which contained the time series data matrix with plain text, shape `(214,140)` , where the first dimension was the number of ROIs[^4] of Shen's -214- atlas and the second one was the number of time series data available -140 data points taken for each ROI-.
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/bd8e13d5ad14fc7103469cd7c6f38da0e5008288/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obteArray3d).py#L39-L114
 
@@ -28,7 +28,9 @@ The packages I've used in this thesis are [sklearn](https://scikit-learn.org/sta
 
 [^1]: Lots of files are missing as github has limited space, so this is a simplification of the directories of my final thesis, not an exhaustive tour to it!
 [^2]: the fMRIs came from a neuroimaging project called ADNI. The [ADNI](https://adni.loni.usc.edu/)(Alzheimer's disease neuroimaging iniciative) gathered together high quality, free to use data on the alzheimer's disease, an without this data this thesis wouldn't have been possible.
-[^3] NIFTI files are not here, as the occupy several Gigabytes of data. This is just for showcasing purposes.
+[^3] NIFTI files are not here, as they occupy several Gigabytes of data. This is just for showcasing purposes.
+[^4] Region of Interest (ROI).
+
 # ABSTRACT
 
 In the last years scientists have tried to develop predictive models for
