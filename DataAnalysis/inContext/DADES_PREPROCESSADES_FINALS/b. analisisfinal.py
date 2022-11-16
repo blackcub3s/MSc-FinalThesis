@@ -407,7 +407,7 @@ def mat_corr_labels_i_pipeline(ploteja_totes_les_matrius_de_conectivitat, plotej
 	
 	
 	#ANALISI INDEPENDENT 2)  FEM 10-fold-crossvalidation + SVM --> RESULTATS MOLT POBRES AMB PCA, tant estandaritzant com sense fer-ho. No diagnostica cap malalt, specificiat 0 amb PCA. probats varis components
-	apc.PCA_10foldCV_ROC(X=X, 
+	apc.PCA_10foldCV_ROC(X=X,
 						 y=Y,					# NOTA_ PCA_by_santi i rfecv son mutuament excloents
 						 PCA_by_santi=False, 	# primer boolea True si vols fer PCA (false si no el fas)#Si vols estandaritzar columnes en fer el PCA (Si no el fas es igual si es True o false)has d'anar a dins el fitxer i buscar "estandaritzar_variables"
 						 rfecv=False,  			# no funciona... si poses True hauria de fer Recursive feature elimination. Si poses False no te la fa

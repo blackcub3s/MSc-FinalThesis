@@ -54,13 +54,13 @@ This repository contains my MSc's final thesis and the the most important progra
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/60de1f5d9149d065bfdf3a592d007802fb63c3ec/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L403-L417
 
-        `apc.PCA_10foldCV_ROC(X=X .. )` is the function call to the `PCA_10foldCV_ROC` function within the file [aux__plot_roc_crossval.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/7592ad1c1d86a1427c29db471564e236368d259b/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__plot_roc_crossval.py). That function is described down below
+        `apc.PCA_10foldCV_ROC(X=X .. )` is the function call to the `PCA_10foldCV_ROC` of another file, which are described down below:
 
     * [aux__plot_roc_crossval.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/7592ad1c1d86a1427c29db471564e236368d259b/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__plot_roc_crossval.py): As we said, this is the file where the machine learning models are run. 10-fold-crossvalidation, PCA, Artificial Neural networks., etc. Within this file the most important function is the one we called at line 410 in the previous file above and goes as follows: 
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/7592ad1c1d86a1427c29db471564e236368d259b/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__plot_roc_crossval.py#L64-L307
 
-    * [aux__ploteja_matrius_correlacions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__ploteja_matrius_correlacions.py): **lorem  asd asd asd asdasd**
+    * [aux__ploteja_matrius_correlacions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__ploteja_matrius_correlacions.py)
 
     * [aux__reduccio_dimensions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__reduccio_dimensions.py): This file was done in order to implement a graphical interpretation for the explained variance of a principal components analysis (i.e it plots the eigenvalues of each component for the previously chosen number of components). The scree plot is a graphical way of seeing whether each component of a PCA adds value to what we are trying to model in terms of parsimony. Softwares such as SPSS or R have the possibility of getting a Scree plot easily, but python doesn't (at least, not while I was doing this thesis). So I coded this program to get the scree plot.
     
