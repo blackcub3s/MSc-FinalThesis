@@ -36,14 +36,17 @@ This repository contains my MSc's final thesis and the the most important progra
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/a2479224491c308d72a412e4dc2724107a830fe0/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L108-L111
 
-        `mat_corr_labels_i_pipeline()`: This function took the numpy ndarray `arr_TS` with shape *(57,214,140)* (57 subjects with 214 ROIs each and 140 Time Series per ROI) applied the Functional Connectivity deffinition. Generally speaking the functional connectivity (*FC*) is a construct that tell how well connected a brain is. Here, the *FC* of one given subject was defined as the all possible correlations between the time series of the subject ROIs, vectorized. Namely, for each matrix  *(n,m) = (214,140)* we would get a *(n,n) = (214,214)* pearson correlation matrix (or the adjacency matrix of a complete graph with 214 nodes) called `arr_cor` and stored as [out_FC(57 subjectes).npy](https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/out_FC%20(74%20subjectes).npy)[^7] in this subset of lines of code:
+        `mat_corr_labels_i_pipeline()`: This function took the numpy ndarray `arr_TS` with shape *(57,214,140)* (57 subjects with 214 ROIs each and 140 Time Series per ROI) applied the Functional Connectivity definition. The Functional Connectivity (*FC*) is a construct that tells how well connected a brain is. Here, the *FC* of one given subject was defined as all possible correlations between the time series of the subject's ROIs, vectorized in a single line. Namely, for each matrix  *(n,m) = (214,140)* we would get a *(n,n) = (214,214)* pearson correlation matrix (or the adjacency matrix of a complete graph with 214 nodes) called `arr_cor` and stored as [out_FC(57 subjectes).npy](https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/out_FC%20(74%20subjectes).npy)[^7] as obtained in this lines of code:
 
 
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L305-L321
 
-       
-    There are also other files, which have relevance:
+        And after that, we would take the [out_FC(57 subjectes).npy](https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/out_FC%20(74%20subjectes).npy)[^7] and obtain the `ll_ROIxROI_flattened` with shape $dfrac{1/2} \cdot n\cdot(n-1) $
+
+        https://github.com/blackcub3s/MSc-FinalThesis/blob/a2479224491c308d72a412e4dc2724107a830fe0/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L374-L379
+
+        And the function call
 
     * [aux__ploteja_matrius_correlacions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__ploteja_matrius_correlacions.py): **lorem  asd asd asd asdasd**
     * [aux__reduccio_dimensions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__reduccio_dimensions.py): This file was done in order to implement a graphical interpretation for the explained variance of a principal components analysis (i.e it plots the eigenvalues of each component for the previously chosen number of components). The scree plot is a graphical way of seeing whether each component of a PCA adds value to what we are trying to model in terms of parsimony. Softwares such as SPSS or R have the possibility of getting a Scree plot easily, but python doesn't (at least, not while I was doing this thesis). So I coded this program to get the scree plot.
