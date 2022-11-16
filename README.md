@@ -52,7 +52,7 @@ This repository contains my MSc's final thesis and the the most important progra
 
         Finally we obtain the *Y* matrix, with the labels (wheter or not the MCI will convert to AD or no, with a 1 or 0 respectively) and run the machine learning models:
 
-        https://github.com/blackcub3s/MSc-FinalThesis/blob/a2479224491c308d72a412e4dc2724107a830fe0/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L403-L414
+        https://github.com/blackcub3s/MSc-FinalThesis/blob/a2479224491c308d72a412e4dc2724107a830fe0/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L400-L417
 
 
     * [aux__ploteja_matrius_correlacions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__ploteja_matrius_correlacions.py): **lorem  asd asd asd asdasd**
