@@ -54,9 +54,9 @@ This repository contains my MSc's final thesis and the the most important progra
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/60de1f5d9149d065bfdf3a592d007802fb63c3ec/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L403-L417
 
-        apc is the name we give to the file [aux__plot_roc_crossval.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/7592ad1c1d86a1427c29db471564e236368d259b/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__plot_roc_crossval.py), that is linked down below.
+        `apc.PCA_10foldCV_ROC(X=X .. )` is the function call to the `PCA_10foldCV_ROC` function within the file [aux__plot_roc_crossval.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/7592ad1c1d86a1427c29db471564e236368d259b/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__plot_roc_crossval.py). That function is described down below
 
-    * [aux__plot_roc_crossval.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/7592ad1c1d86a1427c29db471564e236368d259b/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__plot_roc_crossval.py): This is the file where the machine learning models are run. 10-fold-crossvalidation, PCA, Artificial Neural networks. Within this file the most important functions is this one:
+    * [aux__plot_roc_crossval.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/7592ad1c1d86a1427c29db471564e236368d259b/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__plot_roc_crossval.py): As we said, this is the file where the machine learning models are run. 10-fold-crossvalidation, PCA, Artificial Neural networks., etc. Within this file the most important function is the one we called at line 410 in the previous file above and goes as follows: 
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/7592ad1c1d86a1427c29db471564e236368d259b/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__plot_roc_crossval.py#L64-L307
 
