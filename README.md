@@ -42,7 +42,7 @@ This repository contains my MSc's final thesis and the the most important progra
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L305-L321
 
-        And after that, we would take the [out_FC(57 subjectes).npy](https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/out_FC%20(74%20subjectes).npy)[^7] and obtain the `ll_ROIxROI_flattened` with shape $0.5 \cdot n(n-1)$
+        And after that, we would take the [out_FC(57 subjectes).npy](https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/out_FC%20(74%20subjectes).npy)[^7] and obtain the `ll_ROIxROI_flattened` with shape $(1/2) \cdot n(n-1)$
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/a2479224491c308d72a412e4dc2724107a830fe0/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L374-L379
 
