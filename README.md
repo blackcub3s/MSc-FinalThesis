@@ -42,11 +42,11 @@ This repository contains my MSc's final thesis and the the most important progra
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L305-L321
 
-        And after that, we would take the `arr_corr` for each $i$ subject in a for loop (`arr_corr[i]`)and obtain the flattened vector with the pearson correlations called `ll_ROIxROI_flattened` with shape $(1/2) \cdot n(n-1)$:
+        And after that, we would take the `arr_corr` for each $i$ subject in a for loop (`arr_corr[i]`) and obtain the flattened vector with the pearson correlations called `ll_vector` and stored within the `X` matrix that will go to the machine learning model. `ll_vector` will have shape $(1/2) \cdot n(n-1)$:
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/a2479224491c308d72a412e4dc2724107a830fe0/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L374-L379
 
-        And the auxiliary function call that allows us to do it is as follows:
+        The auxiliary function call in line 378 that allows us to do obtain `ll_vector` (`ll_ROIxROI_flattened` within the function) is here: 
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/7592ad1c1d86a1427c29db471564e236368d259b/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/funcions_auxiliars.py#L29-L44
 
