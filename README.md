@@ -36,10 +36,13 @@ This repository contains my MSc's final thesis and the the most important progra
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/a2479224491c308d72a412e4dc2724107a830fe0/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L108-L111
 
-        `mat_corr_labels_i_pipeline()`: This function took the numpy ndarray `arr_TS` with shape *(57,214,140)* (57 subjects with 214 ROIs each and 140 Time Series per ROI) applied the Functional Connectivity deffinition. Generally speaking functional connectivity (* FC* ) is a construct that tries to inform on how well connected a brain is. I took the *FC* to be defined for each subject as the vectorized all possible correlations between the time series of all ROIs. That is for each matrix  *(n,m) = (214,140)* we would get a *(n,n) = (214,214)* pearson correlation matrix (a type of adjacency matrix of a complete graph, if you want) in this subset of lines of code:
+        `mat_corr_labels_i_pipeline()`: This function took the numpy ndarray `arr_TS` with shape *(57,214,140)* (57 subjects with 214 ROIs each and 140 Time Series per ROI) applied the Functional Connectivity deffinition. Generally speaking functional connectivity (* FC* ) is a construct that tries to inform on how well connected a brain is. I took the *FC* to be defined for each subject as the vectorized all possible correlations between the time series of all ROIs. That is for each matrix  *(n,m) = (214,140)* we would get a *(n,n) = (214,214)* pearson correlation matrix called `arr_cor` and stored as [out_FC(57 subjectes).npy](https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/out_FC%20(74%20subjectes).npy)[^7] in this subset of lines of code:
+
+
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L305-L321
 
+       
     There are also other files, which have relevance:
 
     * [aux__ploteja_matrius_correlacions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__ploteja_matrius_correlacions.py): **lorem  asd asd asd asdasd**
@@ -55,7 +58,7 @@ The packages I've used in this thesis are [sklearn](https://scikit-learn.org/sta
 [^4]: Region of Interest (ROI).
 [^5]: `(93,214,140) --> (SUBJECTS, ROIs,TIME SERIES)`
 [^6]: In my final thesis I took subjects that were at risk of developing Alzheimer's disease but didn't have the disease (these are what are called *Mild Cognitive Impairment* or MCI). At the moment of diagnosis as MCI, they had to undergo a brain fMRI scan. Then time went on and after some years some of them became Alzheimer's disease (MCI-c), and some didn't (MCI-nc). The ones who I labeled as MCI-c are clear to label, but the ones who are MCI-nc are not clear (because there might be not enough longitudinal data because the patient might die, get discontinued from the study). So it was important to choose a criterion to decide how many years of follow up are *enough* for a patient to be considered free of Alzheimer's. 
-
+[^7]: The actual code got 74 subjects, as changes in the inclusion criteria (MCI-nc cutoff time point) varied.
 # FINAL THESIS ABSTRACT
 
 In the last years scientists have tried to develop predictive models for
