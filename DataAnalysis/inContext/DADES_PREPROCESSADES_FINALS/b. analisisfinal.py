@@ -402,7 +402,7 @@ def mat_corr_labels_i_pipeline(ploteja_totes_les_matrius_de_conectivitat, plotej
 		#ADAS11 SOL PERFECTE
 	#CREO VARIABLE Y, que contindrà les labels (1 --> MCI-C | 0 --> MCI-NC)	 	
 	Y = df["s_CONVER"].values;	print("Y shape: ", Y.shape) # Y te shape (57,)
-	print("Y shape: ",Y.shape)
+	print("Y shape: ",Y.shape) 
 	time.sleep(2)
 	
 	#ANALISI INDEPENDENT 2) 			FEM 10-fold-crossvalidation + SVM --> RESULTATS MOLT POBRES AMB PCA, tant estandaritzant com sense fer-ho. No diagnostica cap malalt, specificiat 0 amb PCA. probats varis components
