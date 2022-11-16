@@ -20,7 +20,7 @@ This repository contains my MSc's final thesis and the the most important progra
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L48-L243
 
-        The most important inclusion criteria within that function was how I decided to filter out the subjects who would not convert to Alzheimer's (see the footnote to understand the reasoning [^6] I followed). I ended up choosing the criterion of considering those who wouldn't turn to alzheimer's (MCI-nc) as those subjects who hadn't turn to alzheimers above the time period $t$ such that:
+        The most important inclusion criteria within that function was how I decided to filter out the subjects who would not convert to Alzheimer's (see the footnote to understand the reasoning that was to be followed[^6]). The idea was to choose the criterion of considering those who wouldn't turn to alzheimer's (MCI-nc) as those subjects who hadn't turn to alzheimers above the time period $t$, such that:
 
         
         $$ t > μ + n*ρ $$
@@ -32,11 +32,13 @@ This repository contains my MSc's final thesis and the the most important progra
             ρ = standard deviation of those who turned to AD
             n = 1.85 (arbitrary number, but if we consider the distribution of time for MCIc to be normal, that would way above the central tendency of the data).
 
-        In the code I stored the subjects of analysis within the `df_MCInc` dataframe, by writing this:
+        In the following code, you can see I stored the subjects I would finally analyse within the `df_MCInc` dataframe, by writing this:
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/a2479224491c308d72a412e4dc2724107a830fe0/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L108-L111
 
-        
+        `mat_corr_labels_i_pipeline()`: This function took the numpy ndarray `arr_TS` with shape $(57,214,140)$ (57 subjects with 214 ROIs each and 140 Time Series per ROI) applied the Functional Connectivity deffinition. Generally speaking functional connectivity (* FC* ) is a construct that tries to inform on how well connected a brain is. I took the *FC* to be defined for each subject as the vectorized all possible correlations between the time series of all ROIs. That is for each matrix  *(n,m) = (214,140)* we would get a *(n,n) = (214,214)* pearson correlation matrix (a type of adjacency matrix of a complete graph, if you want) in this subset of lines of code:
+
+        https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L305-L321
 
     There are also other files, which have relevance:
 
