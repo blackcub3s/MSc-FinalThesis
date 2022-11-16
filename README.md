@@ -53,8 +53,12 @@ This repository contains my MSc's final thesis and the the most important progra
         Finally we obtain the *Y* matrix, with the labels (wheter or not the MCI will convert to AD or no, with a 1 or 0 respectively) and run the machine learning models:
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/60de1f5d9149d065bfdf3a592d007802fb63c3ec/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L403-L417
-        
 
+        apc is the name we give to the file [aux__plot_roc_crossval.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/7592ad1c1d86a1427c29db471564e236368d259b/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__plot_roc_crossval.py), that is linked down below.
+
+    * [aux__plot_roc_crossval.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/7592ad1c1d86a1427c29db471564e236368d259b/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__plot_roc_crossval.py): This is the file where the machine learning models are run. 10-fold-crossvalidation, PCA, Artificial Neural networks. Within this file the most important functions is this one:
+
+        https://github.com/blackcub3s/MSc-FinalThesis/blob/7592ad1c1d86a1427c29db471564e236368d259b/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__plot_roc_crossval.py#L64-L307
 
     * [aux__ploteja_matrius_correlacions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__ploteja_matrius_correlacions.py): **lorem  asd asd asd asdasd**
 
