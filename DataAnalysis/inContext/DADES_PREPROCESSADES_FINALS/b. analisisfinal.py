@@ -402,14 +402,8 @@ def mat_corr_labels_i_pipeline(ploteja_totes_les_matrius_de_conectivitat, plotej
 		#ADAS11 SOL PERFECTE
 	#CREO VARIABLE Y, que contindrà les labels (1 --> MCI-C | 0 --> MCI-NC)	 	
 	Y = df["s_CONVER"].values;	print("Y shape: ", Y.shape) # Y te shape (57,)
-	#Y = np.array([1,1,1,0,1,1,0,0,0,0,0,0]) #ground truth (1 es home, 0 es dona). Cas posicio 3 es un home pero li hem donat label de dona (fals neg).
 	print("Y shape: ",Y.shape)
-	##################################################
-	print("time sleep 2 segons")
 	time.sleep(2)
-
-	#ANALISI INDEPENDENT 1) 			random split
-	#cpm.funcio_ml_by_andrea(X,Y) #		MLR + PCA, z + MLR + PCA, MLR + PCA [3 PIPELINES]
 	
 	#ANALISI INDEPENDENT 2) 			FEM 10-fold-crossvalidation + SVM --> RESULTATS MOLT POBRES AMB PCA, tant estandaritzant com sense fer-ho. No diagnostica cap malalt, specificiat 0 amb PCA. probats varis components
 	apc.PCA_10foldCV_ROC(X=X,
@@ -420,7 +414,7 @@ def mat_corr_labels_i_pipeline(ploteja_totes_les_matrius_de_conectivitat, plotej
 						 carpeta='BIOMARCADORS_models_finals')	#SI TOQUES COSES DE fMRI treu-ho a la carpeta 'fMRI_models_finals'
 
 						 #LA CARPETA ON GUARDARAS TOTES LES ACCURACY METRICS. Ha d'existir primer o dona error.
-	#Analisi INDEPENDENT 3)								#VIGILA PQ SI NO HAS COPIAT ELS ANALISIS A UNA ALTRA BANDA ELS PETARAS
+
 
 	
 #crea_els_CSVs_finals_FUNCIO1()
