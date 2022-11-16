@@ -28,14 +28,12 @@ def comprova_nans(M_3D):
 					
 def elimina_tri_superior_i_flateneja_ROIxROI(m_correl):
 	"""
-	Aquest mètode pren una array de numpy que conté una matriu de correlacionsnxn anomenada m_correl (ROIxROI), n'elimina el triangle superior i la diagonal principal i en retornael que hi ha a returns.
+	PRE: This method takes a numpy array that contains a matrix of correlationsnxn called m_correl (ROIxROI)
+	POST: Returns ll_ROIxROI_flattened (i.e upper triangle of m_correl and the main diagonal gets eliminated, and the lower triangle vectorized and
+	returned as a a list type object as a ROW of (1/2) * n (n-1) correlations (elements). Thus, If m_correl input size us 214x214 -shen atlas- you will 
+	get 22,791 valies within ll_ROIxROI_flattened
 	
-	RETURNS: Un objecte tipus list. concretament unvector (fila) de (1/2)*n(n-1) correlacions (elements). Si ROIxROI d'entrada
-	es 90x90, el vector que es retorna tindrà 4005 valors. Si es 214x214 -shen- obtindrà22 791 valors...
-
-	NOTA:		
-	Podria ser temptador fer servir la funció numpy.tril, però no ens flateneja l'arrayni tampoc ens treu els elements que ocupen el triangle
-	superior ni la diagonal principal (per tant, igualment ho hauriem de fer nosaltresmanualment...
+	NOTE: This Does the same as numpy.tril function
 	"""
 	#m_correl es dataframe de pandas. com que vull operar com a llista... || FAIG A LA SEGUENT LINIA LE PAS dataframe ----> array numpy ----> llista
 	ll_correl = m_correl.tolist() #ndarray --> llista 
