@@ -20,12 +20,7 @@ This repository contains my MSc's final thesis and some of the most important Py
 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/3cfe02d11977db9d5d736267c5d6f6114fe82039/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/b.%20analisisfinal.py#L48-L243
 
-        The most important inclusion criteria within that function was how I decided to filter out the subjects who would not convert to Alzheimer's (see the footnote to understand the reasoning that was to be followed[^6]). The idea was to choose the criterion of considering those who wouldn't turn to alzheimer's (MCI-nc) as those subjects who hadn't turn to alzheimers above the time period $t$, such that:
-
-        
-        $$ 
-            t > \mu + n\rho
-        $$
+        The most important inclusion criteria within that function was how I decided to filter out the subjects who would not convert to Alzheimer's (see the footnote to understand the reasoning that was to be followed[^6]). The idea was to choose the criterion of considering those who wouldn't turn to alzheimer's (MCI-nc) as those subjects who hadn't turn to alzheimers above the time period $t$, such that: $t > \mu + n\rho$
        
             
         Where  
