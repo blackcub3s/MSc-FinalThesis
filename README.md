@@ -24,7 +24,7 @@ This repository contains my MSc's final thesis and some of the most important Py
 
         
         $$ 
-             t = μ + n*ρ 
+            t > \mu + n\rho
         $$
        
             
