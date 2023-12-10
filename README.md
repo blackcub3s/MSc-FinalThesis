@@ -1,6 +1,6 @@
 # REPOSITORY DESCRIPTION
 
-This repository contains my MSc's final thesis and the the most important programs that I made, which were key to arrive to its end. These are the most important files and folders, explained:
+This repository contains my MSc's final thesis and some of the most important Python scripts that I made towards the completion of the thesis. These are some of the folders and files that were relevant to it, explained:
 
 - [TFM_FINAL_santiagosanchez.pdf](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/TFM_FINAL_santiagosanchez.pdf): the final thesis as was handed in to the university.
 - [Writing](https://github.com/blackcub3s/MSc-FinalThesis/tree/main/Writing): Contains the LaTeX files and figures that were put together in order to compile * *TFM_FINAL_santiagosanchez.pdf* *
@@ -8,7 +8,7 @@ This repository contains my MSc's final thesis and the the most important progra
 
 
     * [mira_dades.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/mira_dades.py): In this script the most important functions are these:
-        1. Merge two datasets with complementary information: see `IMPORTANT_depura_ADNI_MERGE_i_ARXIU_fMRIs()`
+        1. Merge two datasets with complementary information: you can see `IMPORTANT_depura_ADNI_MERGE_i_ARXIU_fMRIs()`
         2. See which subjects convert to alzheimer's and which do not: see `temps_de_conversio(SUBMODALITAT_fMRI)` 
     * [a. fes_merge_en_tensor_3d (obte l'array 3d).py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obteArray3d).py): In this file the most important snippet of code is the funcion `fes_merge(n_timeseries)` (see down below). 
         https://github.com/blackcub3s/MSc-FinalThesis/blob/bd8e13d5ad14fc7103469cd7c6f38da0e5008288/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/a.%20fes_merge_en_tensor_3d%20(obteArray3d).py#L39-L114
