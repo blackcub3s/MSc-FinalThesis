@@ -1,6 +1,34 @@
-# REPOSITORY DESCRIPTION
+# Description
 
-This repository contains my MSc's final thesis and some of the most important Python scripts that I made towards the completion of the thesis. These are some of the folders and files that were relevant to it, explained:
+This repository contains my MSc's final thesis, a quick explanation of its results, and some of the most important Python scripts that I made towards the completion of the thesis.
+
+# Summary
+
+My final thesis “Development of a single-Subject Predictive model of Alzheimer's disease using fMRI and machine learning techniques in individuals with Mild Cognitive Impairment” was an endeavour that involved working with big data, fMRI and machine learning models. I used Python to carry out the data analysis from data retreived from  a neuroimaging project called ADNI[^8].
+
+For the data analysis I took a multi processing pipeline approach, using a leave one-out cross-validation procedure (the data was scarce so there was a need to reduce dimensionality). In order to select the best fitting algorithm, there were several processing pipelines, and for each one of them a different machine
+learning model was fitted: artificial neural network (multilayer perceptron), logistic
+regression, naive bayes, random trees, etc.
+
+The conclusions of the master thesis were that Alzheimer's disease has
+potential to be predicted by using fMRI in a population at risk for developing it (mild
+cognitive impairment) with a decent accuracy. This can be done using machine learning
+and an abstract computational neuroscience concept called functional connectivity (an
+indirect measure on how interconnected a brain is). However, further research should
+be done and results are to be interpreted with a grain of salt, given that although best
+fitting model accuracy was good and specificity was high, the sensitivity of the
+classification was low, probably due to the low sample size of mild cognitive impairment
+patients who would turn into Alzheimer’s disease as opposed to the sample size of
+those who wouldn’t.
+
+- Tech stack: Python 3. Used modules: sklearn (machine learning), matplotlib
+(data visualization), seaborn (enhanced layer for matplotlib), numpy (matrix laboratory),
+pandas (data science). In order to write my final thesis I used LaTeX as, to the best of my
+knowledge, is the highest typographic quality system available as open source.
+
+# Folders and files to comment
+
+The most important files and folders the reader can refer to, to see either the full thesis or the code with which I got the results from the reader can be headed to any or all of the following folders or files (see thorough explanation for each relevant file):
 
 - [TFM_FINAL_santiagosanchez.pdf](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/TFM_FINAL_santiagosanchez.pdf): the final thesis as was handed in to the university.
 - [Writing](https://github.com/blackcub3s/MSc-FinalThesis/tree/main/Writing): Contains the LaTeX files and figures that were put together in order to compile * *TFM_FINAL_santiagosanchez.pdf* *
@@ -62,7 +90,7 @@ This repository contains my MSc's final thesis and some of the most important Py
     * [aux__reduccio_dimensions.py](https://github.com/blackcub3s/MSc-FinalThesis/blob/main/DataAnalysis/inContext/DADES_PREPROCESSADES_FINALS/aux__reduccio_dimensions.py): This file was done in order to implement a graphical interpretation for the explained variance of a principal components analysis (i.e it plots the eigenvalues of each component for the previously chosen number of components). The scree plot is a graphical way of seeing whether each component of a PCA adds value to what we are trying to model in terms of parsimony. Softwares such as SPSS or R have the possibility of getting a Scree plot easily, but python doesn't (at least, not while I was doing this thesis). So I coded this program to get the scree plot.
     
 
-The packages I've used in this thesis are [sklearn](https://scikit-learn.org/stable/) for machine learning, [matplotlib](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org/) for graph generation and visualization, [pandas](https://pandas.pydata.org/) for data analysis, [numpy](https://numpy.org/) for treating the multidimensional arrays that came out of the NIFTI files that came out of the fMRIs[^8].
+The packages I've used in this thesis are [sklearn](https://scikit-learn.org/stable/) for machine learning, [matplotlib](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org/) for graph generation and visualization, [pandas](https://pandas.pydata.org/) for data analysis, [numpy](https://numpy.org/) for treating the multidimensional arrays that came out of the NIFTI files that came out of the fMRIs.
 
 
 
@@ -75,7 +103,8 @@ The packages I've used in this thesis are [sklearn](https://scikit-learn.org/sta
 [^5]: `(93,214,140) --> (SUBJECTS, ROIs,TIME SERIES)`
 [^6]: In my final thesis I took subjects that were at risk of developing Alzheimer's disease but didn't have the disease (these are what are called *Mild Cognitive Impairment* or MCI). At the moment of diagnosis as MCI, they had to undergo a brain fMRI scan. Then time went on and after some years some of them became Alzheimer's disease (MCI-c), and some didn't (MCI-nc). The ones who I labeled as MCI-c are clear to label, but the ones who are MCI-nc are not clear (because there might be not enough longitudinal data because the patient might die, get discontinued from the study). So it was important to choose a criterion to decide how many years of follow up are *enough* for a patient to be considered free of Alzheimer's. 
 [^7]: The actual code got 74 subjects, as changes in the inclusion criteria (MCI-nc cutoff time point) varied.
-[^8]: the fMRIs came from a neuroimaging project called ADNI. The [ADNI](https://adni.loni.usc.edu/)(Alzheimer's disease neuroimaging iniciative) gathered together high quality, free to use data on the alzheimer's disease, an without this data this thesis wouldn't have been possible.
+[^8]: The [ADNI](https://adni.loni.usc.edu/)(Alzheimer's disease neuroimaging iniciative) gathered together high quality, free to use data on the alzheimer's disease, an without this data this thesis wouldn't have been possible.
+
 # FINAL THESIS ABSTRACT
 
 In the last years scientists have tried to develop predictive models for
