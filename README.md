@@ -2,13 +2,11 @@
 
 This repository contains my MSc's final thesis, a quick explanation of its results, and some of the most important Python scripts that I made towards the completion of the thesis.
 
-# Summary
+# Extended Summary
 
 My final thesis “Development of a single-Subject Predictive model of Alzheimer's disease using fMRI and machine learning techniques in individuals with Mild Cognitive Impairment” was an endeavour that involved working with big data, fMRI and machine learning models. I used Python to carry out the data analysis from data retreived from  a neuroimaging project called ADNI[^8].
 
-For the data analysis I took a multi processing pipeline approach, using a leave one-out cross-validation procedure (the data was scarce so there was a need to reduce dimensionality). In order to select the best fitting algorithm, there were several processing pipelines, and for each one of them a different machine
-learning model was fitted: artificial neural network (multilayer perceptron), logistic
-regression, naive bayes, random trees, etc.
+For the data analysis I took a multi processing pipeline approach, using a leave one-out cross-validation procedure (the data was scarce so there was a need to reduce dimensionality). In order to select the best fitting algorithm, there were several processing pipelines, and for each one of them a different machine learning model was fitted: artificial neural network (multilayer perceptron), logistic regression, naive bayes, random trees, etc.
 
 The conclusions of the master thesis were that Alzheimer's disease has
 potential to be predicted by using fMRI in a population at risk for developing it (mild
@@ -25,6 +23,32 @@ those who wouldn’t.
 (data visualization), seaborn (enhanced layer for matplotlib), numpy (matrix laboratory),
 pandas (data science). In order to write my final thesis I used LaTeX as, to the best of my
 knowledge, is the highest typographic quality system available as open source.
+
+# Abstract (for a more technical read)
+
+In the last years scientists have tried to develop predictive models for
+forecasting a future onset of Alzheimer's disease (AD) in people with Mild
+Cognitive Impairment (MCI), using fluid, imaging and neuropsychological
+biomarkers. To the best of our knowledge, the question of whether functional
+magnetic resonance imaging (fMRI) can serve as a viable predictor for
+the aforementioned disease in MCI individuals remains unanswered. We have
+developed a single-subject predictive model using, for each individual, solely
+a rsfMRI scan obtained at the screening visit of the ADNI and follow-up
+longitudinal data about future outcomes (AD presence/absence). We included
+in our model 23 MCI-c (mean time until conversion: 1.65 years) and
+51 MCI-nc patients (mean time of follow-up: 4.61 years). Scan preprocessing
+pipelines consisted on registering each scan to Shen's Atlas (214 ROIs),
+extract functional connectivity measures and use them as predictors (either
+with or without dimensionality reduction) and pair them with the future
+outcomes to train and test supervised machine learning models via 10-fold
+cross-validation. We found conversion from MCI to AD can be predicted
+from rsfMRI with a multilayer perceptron with no dimensionality reduction
+with a reasonable accuracy (77.03%, 95% CI from 67 to 87%), good ROC
+AUC (0.81), very high specficity (specMLP = 90.20, 95% CI from 83 to 97%)
+but weak sensitivity (47.83%, 95% CI from 36 to 59%). Logistic regression
+and the Support Vector machines also obtained reasonable diagnostic accuracies
+(75.68%, both of them). The models cannot be deployed to clinical
+practice yet: further research is needed to increase sensitivity.
 
 # Folders and files to comment
 
@@ -105,28 +129,3 @@ The packages I've used in this thesis are [sklearn](https://scikit-learn.org/sta
 [^7]: The actual code got 74 subjects, as changes in the inclusion criteria (MCI-nc cutoff time point) varied.
 [^8]: The [ADNI](https://adni.loni.usc.edu/)(Alzheimer's disease neuroimaging iniciative) gathered together high quality, free to use data on the alzheimer's disease, an without this data this thesis wouldn't have been possible.
 
-# FINAL THESIS ABSTRACT
-
-In the last years scientists have tried to develop predictive models for
-forecasting a future onset of Alzheimer's disease (AD) in people with Mild
-Cognitive Impairment (MCI), using fluid, imaging and neuropsychological
-biomarkers. To the best of our knowledge, the question of whether functional
-magnetic resonance imaging (fMRI) can serve as a viable predictor for
-the aforementioned disease in MCI individuals remains unanswered. We have
-developed a single-subject predictive model using, for each individual, solely
-a rsfMRI scan obtained at the screening visit of the ADNI and follow-up
-longitudinal data about future outcomes (AD presence/absence). We included
-in our model 23 MCI-c (mean time until conversion: 1.65 years) and
-51 MCI-nc patients (mean time of follow-up: 4.61 years). Scan preprocessing
-pipelines consisted on registering each scan to Shen's Atlas (214 ROIs),
-extract functional connectivity measures and use them as predictors (either
-with or without dimensionality reduction) and pair them with the future
-outcomes to train and test supervised machine learning models via 10-fold
-cross-validation. We found conversion from MCI to AD can be predicted
-from rsfMRI with a multilayer perceptron with no dimensionality reduction
-with a reasonable accuracy (77.03%, 95% CI from 67 to 87%), good ROC
-AUC (0.81), very high specficity (specMLP = 90.20, 95% CI from 83 to 97%)
-but weak sensitivity (47.83%, 95% CI from 36 to 59%). Logistic regression
-and the Support Vector machines also obtained reasonable diagnostic accuracies
-(75.68%, both of them). The models cannot be deployed to clinical
-practice yet: further research is needed to increase sensitivity.
